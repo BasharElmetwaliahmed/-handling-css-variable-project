@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <meta charset="UTF-8">
+    <title>Handling Css Variables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <h1>Update Css Variables With <span>JS</span></h1>
+        <div class="controls">
+            <div class="control-container" >
+              <label for="spacing">Spacing</label>
+              <input type="range" min="10" max="30" data-sized="px" value="10" id="spacing" class="spacing" name="spacing">
+            </div>
+
+            <div class="control-container">
+                <label for="blur">Blur</label>
+                <input type="range" min="1" max="20" value="0" data-sized="px" id="blur" name="blur">
+            </div>
+
+            <div class="control-container">
+                <label for="Color">Color</label>
+                <input type="color"   id="color" name="color">
+            </div>
+            
+        </div>
+        <div class="img-container">
+                    <img src="https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg"
+                        alt="background">
+
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
